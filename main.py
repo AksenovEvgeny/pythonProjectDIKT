@@ -30,3 +30,14 @@ my_list.append(44)
 print(my_dict["foo"].get("b"))
 print(my_dict["bar"].get("d"))
 my_dict["bar"].get("d").add(9)
+
+# Ветка 3
+# задание 7-10
+
+print(my_dict["bar"].get("d"))
+my_dict["moo"].get("f").get("lol").remove("o")
+key = {"k": ["K", "e", "k"]}
+my_dict["moo"].get("f").update(key)
+print(my_dict["moo"].get("f"))
+my_dict.clear()
+print(my_dict)
