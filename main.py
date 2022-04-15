@@ -1,16 +1,32 @@
-# This is a sample Python script.
+"""Создать репозиторий для решения задачи. Для решения создать 3 ветки.
+В первой ветке решение 1-3 задачи, в второй 4-6, в третьей - 7-10. Отправить мне.
+После одобрения вливать в main при помощи пулл-реквестов."""
 
-# Press Shift+F10 to execute it or replace it with your code.
-# Press Double Shift to search everywhere for classes, files, tool windows, actions, and settings.
+my_list = [42, 43]
+my_dict = {
+    "foo": {
+        "a": 12,
+        "b": (1, 2, 3, 4, my_list)
+    },
+    "bar": {
+        "c": 12,
+        "d": {5, 6, 7}
+    },
+    "moo": {
+        "e": 12,
+        "f": {"lol": ["l", "o", "l"]}
+    },
+}
 
+# Ветка 1
+# задание 1-3
+print(my_dict["foo"])
+print(my_dict["foo"].get("b"))
+my_list.append(44)
 
-def print_hi(name):
-    # Use a breakpoint in the code line below to debug your script.
-    print(f'Hi, {name}')  # Press Ctrl+F8 to toggle the breakpoint.
+# Ветка 2
+# задание 4-6
 
-
-# Press the green button in the gutter to run the script.
-if __name__ == '__main__':
-    print_hi('PyCharm')
-
-# See PyCharm help at https://www.jetbrains.com/help/pycharm/
+print(my_dict["foo"].get("b"))
+print(my_dict["bar"].get("d"))
+my_dict["bar"].get("d").add(9)
